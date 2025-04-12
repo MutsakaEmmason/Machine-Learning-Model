@@ -1,5 +1,5 @@
 # Base image
-FROM python:3.10
+FROM python:3.10-slim 
 
 # Set working directory
 WORKDIR /app
@@ -8,8 +8,10 @@ WORKDIR /app
 COPY api/app/ /app
 
 
-# Install dependencies
+# Update pip and install dependencies
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
+
 
 # Expose port
 EXPOSE 5000
