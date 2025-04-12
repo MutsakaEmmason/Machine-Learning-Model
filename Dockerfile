@@ -4,7 +4,7 @@ FROM python:3.10
 # Set working directory
 WORKDIR /app
 
-# Copy app code
+# Copy app code...
 COPY api/app/ /app
 
 
