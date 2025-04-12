@@ -8,9 +8,9 @@ WORKDIR /app
 COPY api/app/ /app
 
 
-# Update pip and install dependencies with verbosity
+# Update pip and install dependencies
 RUN pip install --upgrade pip
-RUN pip install --no-cache-dir -r requirements.txt --verbose
+RUN pip install --no-cache-dir -r requirements.txt
 
 
 # Expose port
