@@ -1,11 +1,11 @@
 # Base image
-FROM python:3.10-slim
+FROM python:3.10
 
 # Set working directory
 WORKDIR /app
 
 # Copy app code
-COPY api/app/ .
+COPY api/app/ /app
 
 
 # Install dependencies
