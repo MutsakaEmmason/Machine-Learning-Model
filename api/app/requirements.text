@@ -1,0 +1,6 @@
+Flask
+torch
+pennylane
+scikit-learn
+joblib
+numpy
